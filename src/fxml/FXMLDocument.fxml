@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemajuez.FXMLDocumentController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1366.0">
+          <children>
+            <ImageView fitHeight="740.0" fitWidth="1366.0" layoutX="-2.0" layoutY="-5.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@back.jpg" />
+               </image>
+            </ImageView>
+            <VBox layoutX="3.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.84" prefHeight="740.0" prefWidth="1366.0" stylesheets="@main.css">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="1276.0" styleClass="HBox" VBox.vgrow="NEVER">
+                     <children>
+                        <Button fx:id="btnSalir" alignment="CENTER" mnemonicParsing="false" onAction="#exit" prefHeight="39.0" prefWidth="122.0" text="Salir" textAlignment="RIGHT" textFill="WHITE" HBox.hgrow="NEVER">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <SplitPane dividerPositions="0.29797979797979796" focusTraversable="true" opacity="0.95" prefHeight="160.0" prefWidth="200.0" stylesheets="@main.css" VBox.vgrow="ALWAYS">
+                     <items>
+                        <AnchorPane maxWidth="740.0" minHeight="0.0" minWidth="0.0" prefHeight="688.0" prefWidth="332.0">
+                           <children>
+                              <Accordion layoutX="-42.0" layoutY="96.0" maxWidth="-Infinity" stylesheets="@main.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                                 <panes>
+                                    <TitledPane fx:id="btnRegistrarSecretario1" animated="false" layoutX="10.0" layoutY="10.0" prefHeight="156.0" prefWidth="393.0" stylesheets="@main.css" text="Registrar Secretario" textFill="#ff9a00c7">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="395.0" prefWidth="188.0">
+                                             <children>
+                                                <Button fx:id="bttnSecre" layoutX="33.0" layoutY="219.0" mnemonicParsing="false" onAction="#registrarSecre" prefHeight="65.0" prefWidth="340.0" text="Registrar" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TitledPane fx:id="btnInicioSesion" animated="false" prefHeight="645.0" prefWidth="393.0" stylesheets="@main.css" text="Inicio Sesión" textFill="#0035ff">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="391.0">
+                                             <children>
+                                                <Button fx:id="btnQuere" layoutX="34.0" layoutY="345.0" mnemonicParsing="false" onAction="#InicioSesionQuere" prefHeight="65.0" prefWidth="340.0" text="Inicio Querellente" textFill="WHITE" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="345.0">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="btnInicio" layoutX="30.0" layoutY="105.0" minWidth="0.0" mnemonicParsing="false" onAction="#InicioSesion" prefHeight="65.0" prefWidth="340.0" text="Inicio Administrativo" textFill="WHITE" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="105.0">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                 </panes>
+                              </Accordion>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minWidth="200.0">
+                           <children>
+                              <VBox fx:id="dataPane" layoutX="-52.0" layoutY="13.0" prefHeight="675.0" prefWidth="997.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="6.0" />
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </VBox>
+          </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="595.0" prefWidth="833.0" style="-fx-background-color: #4c4177;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemajuez.HistorialCasosController">
+    <children>
+      <Label fx:id="welcome" alignment="TOP_CENTER" layoutX="115.0" layoutY="11.0" prefHeight="35.0" prefWidth="242.0" text="Historial de Casos" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabla" layoutX="137.0" layoutY="59.0" prefHeight="497.0" prefWidth="566.0">
+        <columns>
+          <TableColumn fx:id="tbId" editable="false" prefWidth="102.33332824707031" resizable="false" sortable="false" style="-fx-alignment: center;" text="Numero " />
+            <TableColumn fx:id="tbEstado" editable="false" prefWidth="241.66668701171875" resizable="false" sortable="false" style="-fx-alignment: center;" text="Estado" />
+            <TableColumn fx:id="tbFechaHora" editable="false" prefWidth="221.33331298828125" resizable="false" sortable="false" style="-fx-alignment: center;" text="Fecha/Hora" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

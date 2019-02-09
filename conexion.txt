@@ -1,0 +1,7 @@
+#parametros para conexion con mysql
+#Wed Nov 22 12:41:33 CST 2017
+connection=jdbc:mysql://localhost:3306/cortejusticia?
+driver=com.mysql.jdbc.Driver
+password=root
+user=root123
+

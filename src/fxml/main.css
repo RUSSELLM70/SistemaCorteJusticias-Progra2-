@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 19, 2015, 2:15:13 PM
+    Author     : aaa
+*/
+
+.HBox {
+    -fx-background-color: linear-gradient(#f1c40f, #3498db);
+}
+#btnSalir{
+    -fx-background-color:#0AC5BF;  
+}
+.VBox {
+    -fx-background-color: cornsilk;
+}
+
+#btnInicio,#btnQuere {
+    -fx-background-color:  #068B9B;
+}
+#btnInicio:hover,#btnSalir:hover,#btnQuere:hover{
+    -fx-background-color:  #04DAF3;
+}
+
+#btnRegisJuez,#btnRegisQuerell,#btnSecre{
+
+    -fx-background-color:#00ff50  ;  
+
+}
+#btnRegisJuez:hover,#btnRegisQuerell:hover,#btnSecre:hover{
+    -fx-background-color:#4cff00;
+}
+#browse:hover{
+   -fx-background-color: #ff003b; 
+}
+#btnListar{
+    -fx-background-color:#ff003b;  
+
+}
+#bttnSecre:hover{
+    -fx-background-color:#ff8400;
+}
+#bttnSecre{
+    -fx-background-color:#ff9a00;
+}
+#btnListar:hover{
+    -fx-background-color:#ff7100;  
+
+}
+#btnRegistrarJuez:hover,#btnRegistrarSecre:hover{
+    -fx-background-color:#FF0000;  
+
+
+}
+#btnRegistrarJuez,#btnRegistrarSecre{
+    -fx-background-color:#F65454;  
+
+
+}
+

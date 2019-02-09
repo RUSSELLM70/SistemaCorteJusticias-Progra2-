@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #00BCD4;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemajuez.UserPageSecreController">
+    <children>
+      <Label fx:id="welcome" alignment="CENTER" layoutX="656.0" layoutY="112.0" prefHeight="60.0" prefWidth="685.0" text="¡BIENVEDIDO  SECRETARIO!" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Pane layoutX="630.0" layoutY="216.0" prefHeight="336.0" prefWidth="710.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Button fx:id="btnRegistroJuez" focusTraversable="false" layoutX="78.0" layoutY="62.0" mnemonicParsing="false" onAction="#registrarJuez" prefHeight="66.0" prefWidth="277.0" text="Registrar juez" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            
+            </Button>
+            <Button fx:id="btnCerrar" focusTraversable="false" layoutX="410.0" layoutY="197.0" mnemonicParsing="false" onAction="#CerrarSesion" prefHeight="66.0" prefWidth="277.0" text="Cerrar Sesión" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+              
+            </Button>
+            <Button fx:id="btnRegistrarQuere" focusTraversable="false" layoutX="78.0" layoutY="197.0" mnemonicParsing="false" onAction="#registrarQuere" prefHeight="68.0" prefWidth="277.0" text="Registrar querellante" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRegistrarCaso" focusTraversable="false" layoutX="410.0" layoutY="62.0" mnemonicParsing="false" onAction="#registrarCasosSecretario" prefHeight="66.0" prefWidth="277.0" text="Registrar caso" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fitHeight="135.0" fitWidth="125.0" layoutX="30.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/quere.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="163.0" layoutY="107.0" prefHeight="137.0" prefWidth="365.0" text="Casos pendientes del juzgado de Costa Rica" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="283.0" fitWidth="561.0" layoutX="-2.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/vin.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="msjPoderjudicial" editable="false" layoutX="190.0" layoutY="444.0" prefHeight="168.0" prefWidth="328.0" stylesheets="@../styles/UserPage.css" text="El poder judicial le brinda &#10;varias opciones.&#10;" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+    </children>
+</AnchorPane>

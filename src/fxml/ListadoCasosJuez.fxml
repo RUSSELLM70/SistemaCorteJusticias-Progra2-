@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1353.0" style="-fx-background-color: #4c4177;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemajuez.ListadoCasosJuezController">
+    <children>
+      <Label fx:id="welcome" alignment="TOP_CENTER" layoutX="-13.0" layoutY="18.0" prefHeight="35.0" prefWidth="242.0" text="Lista de Casos" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabla" layoutX="13.0" layoutY="72.0" prefHeight="514.0" prefWidth="958.0">
+        <columns>
+          <TableColumn fx:id="tbId" editable="false" prefWidth="65.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="Numero" />
+            <TableColumn fx:id="tbQuere" editable="false" prefWidth="153.99996948242188" resizable="false" sortable="false" text="Querellante asociado" />
+            <TableColumn fx:id="tbEstado" editable="false" prefWidth="122.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="Estado" />
+            <TableColumn fx:id="tbDescri" editable="false" prefWidth="302.3333740234375" resizable="false" sortable="false" style="-fx-alignment: center; -fx-fixed-cell-size: 30;" text="Descripción" />
+            <TableColumn fx:id="tbDetalle" editable="false" prefWidth="310.6666259765625" resizable="false" sortable="false" style="-fx-alignment: center;" text="Detalle" />
+        </columns>
+      </TableView>
+      <Pane layoutX="980.0" layoutY="361.0" prefHeight="225.0" prefWidth="362.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Button fx:id="loadcusinfo" layoutX="77.0" layoutY="144.0" mnemonicParsing="false" onAction="#cargarInfo" prefHeight="53.0" prefWidth="209.0" text="Cargar información">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/cargar.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnEditar" layoutX="185.0" layoutY="77.0" mnemonicParsing="false" onAction="#VistaEditar" prefHeight="53.0" prefWidth="154.0" text="Editar estado">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="42.0" layoutX="210.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/editar.png.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <TextField fx:id="inputNumeroCasoBuscar" layoutX="23.0" layoutY="27.0" prefHeight="41.0" prefWidth="317.0" promptText="Ingresar el numero del caso..." />
+            <Button fx:id="btnHistorial" layoutX="24.0" layoutY="77.0" mnemonicParsing="false" onAction="#VistaHistorial" prefHeight="53.0" prefWidth="154.0" text="Ver historial">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/historial.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="980.0" layoutY="72.0" prefHeight="285.0" prefWidth="362.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <ImageView fx:id="adminimage" fitHeight="165.0" fitWidth="186.0" layoutX="77.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/juez.png" />
+               </image></ImageView>
+            <Label layoutX="8.0" layoutY="225.0" text="Nombre del Juez:" textFill="#4c4177">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="252.0" text="Identificación:" textFill="#4c4177">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="adminname" layoutX="144.0" layoutY="225.0" text="nom" textFill="#4c4177">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="adminid" layoutX="145.0" layoutY="252.0" text="ID " textFill="#4c4177">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="1034.0" layoutY="3.0" prefHeight="72.0" prefWidth="281.0" text="Información del juez " textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
